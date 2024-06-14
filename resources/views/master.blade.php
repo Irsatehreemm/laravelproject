@@ -1,47 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <title>e_commerce_project</title>
-  </head>
-  <body>
-    
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <title>e_commerce_project</title>
+</head>
+<body>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+@include('header')
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<div class="container mt-4">
+  @yield('content')
+</div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
-  @include('header')
-    
-    @yield('content')
-    
-    @include('footer')
+@include('footer')
 
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
-<style>
-    .custom-login{
-        height:600px;
-        padding:100px;
-    }
-</style>
-<!-- <script>
-    $(document).ready(function(){
-       $("button").click(function(){
-alert("all set properly");
-       }) ;
 
-    }); -->
-</script>
+<style>
+  .custom-login {
+    height: 600px;
+    padding: 100px;
+    
+  }
+
+  .box {
+    width: 30%;
+    height: 400px;
+  }
+
+  .img_slide {
+    height: 100px;
+  }
+
+  .red {
+    float: left;
+    width: 25%;
+  }
+
+  .custom-product {
+    margin-bottom: 50px;
+  }
+
+  .trending_wrapper {
+    margin: 30px 0;
+  }
+
+  .trending_wrapper img {
+    height: 100px;
+  }
+  .box1{
+    text-align: center;  /* Center text horizontally */
+      color: red;
+  }
+
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+
+  }
+  .color{
+    background-color:lightgray;
+  }
+  .detail_img{
+    height: 200px;
+  }
+  .search_item{
+    width: 500px;
+  }
+</style>
